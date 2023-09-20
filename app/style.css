@@ -1,16 +1,28 @@
 .buttons {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  height: 400px;
 }
 .buttons button {
-  font-size: 25px;
+  font-size: 35px;
 }
 #res-box {
   width: 99.9%;
   height: 50px;
   border: none;
-  font-size: 25px;
+  font-size: 35px;
 
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+#ques-box {
+  width: 99.9%;
+  height: 50px;
+  border: none;
+  font-size: 35px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   background-color: black;
   color: white;
 }
@@ -18,7 +30,7 @@
   margin: auto;
   max-width: 500px;
   margin-top: 100px;
-
+  border-radius: 20px;
   border: 1px solid black;
 }
 #btnclear {
@@ -26,6 +38,7 @@
 }
 #btn0 {
   grid-column: 1/4;
+  border-bottom-left-radius: 20px;
 }
 .operator {
   background-color: rgb(221, 174, 54);
@@ -33,5 +46,10 @@
 }
 #equalbtn {
   background-color: rgb(221, 174, 54);
+  color: white;
+  border-bottom-right-radius: 20px;
+}
+.number {
+  background-color: rgb(51, 17, 17);
   color: white;
 }

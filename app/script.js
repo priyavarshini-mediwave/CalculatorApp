@@ -1,4 +1,5 @@
 const display = document.querySelector("#res-box");
+const quesdisplay = document.querySelector("#ques-box");
 let Input = "";
 let Operator = "";
 let firstInput = 0;
@@ -44,7 +45,8 @@ equalButton.addEventListener("click", () => {
     }
     // Input = "";
     // Operator = "";
-    display.textContent = `${firstInput} ${Operator} ${secondOperand}= ${result}`;
+    quesdisplay.textContent = `${firstInput} ${Operator} ${secondOperand} =`;
+    display.textContent = result;
   }
 });
 
@@ -52,5 +54,6 @@ const clearButton = document.querySelector("#btnclear");
 clearButton.addEventListener("click", () => {
   Input = "";
   Operator = "";
+  quesdisplay.textContent = "";
   display.textContent = "";
 });
