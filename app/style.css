@@ -1,0 +1,37 @@
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.buttons button {
+  font-size: 25px;
+}
+#res-box {
+  width: 99.9%;
+  height: 50px;
+  border: none;
+  font-size: 25px;
+
+  background-color: black;
+  color: white;
+}
+#app-wrap {
+  margin: auto;
+  max-width: 500px;
+  margin-top: 100px;
+
+  border: 1px solid black;
+}
+#btnclear {
+  grid-column: 1/4;
+}
+#btn0 {
+  grid-column: 1/4;
+}
+.operator {
+  background-color: rgb(221, 174, 54);
+  color: white;
+}
+#equalbtn {
+  background-color: rgb(221, 174, 54);
+  color: white;
+}
